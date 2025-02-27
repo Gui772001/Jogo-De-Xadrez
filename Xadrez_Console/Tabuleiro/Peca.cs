@@ -11,8 +11,8 @@ namespace Tabuleiro
 
 
 
-        public Peca(Posicao posicao, tabuleiro tab, Cor cor){
-            this.posicao = posicao;
+        public Peca(tabuleiro tab, Cor cor){
+            posicao = null;
             Tab = tab;
             this.cor = cor;
             this.QteMovimentos = 0;
