@@ -39,7 +39,7 @@ namespace Tabuleiro
         }
         public bool posicaoValida(Posicao pos)
         {
-            if(pos.Linha < 0 || pos.Linha >=Linhas || pos.Coluna < 0  || pos.Coluna >= Linhas)
+            if(pos.Linha < 0 || pos.Linha >=Linhas || pos.Coluna < 0  || pos.Coluna >= Coluna)
             {
                 return false;
             }
