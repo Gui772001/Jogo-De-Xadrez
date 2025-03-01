@@ -16,10 +16,7 @@ internal class Program
                 try
                 {
                     Console.Clear();
-                    Tela.impirmirTabuleiro(partida.tab);
-                    Console.WriteLine();
-                    Console.WriteLine("Turno : " + partida.turno);
-                    Console.WriteLine("Aguardando jogada : " + partida.jogadorAtual);
+                    Tela.imprimirPartida(partida);
 
                     Console.Write("Origem : ");
                     Posicao origim = Tela.lerPosicaoXadrez().toPosicao();
@@ -43,6 +40,8 @@ internal class Program
                     Console.ReadLine();
                 }
             }
+            Console.Clear();
+            Tela.imprimirPartida(partida);
         }
         catch (Exception e) 
         {
