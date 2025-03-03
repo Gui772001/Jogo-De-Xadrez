@@ -21,7 +21,7 @@ namespace xadrez
 
         public override bool[,] movimentosPossisveil()
         {
-            bool[,] mat = new bool[tab.Linhas, tab.Coluna];
+            bool[,] mat = new bool[tab.Linhas, tab.Colunas];
             Posicao pos = new Posicao(0, 0);
 
             // Movimento para cima
@@ -72,7 +72,7 @@ namespace xadrez
                 pos.Coluna--;
             }
             //No
-
+            // Movimento NO (Noroeste)
             pos.definirValores(posicao.Linha - 1, posicao.Coluna - 1);
             while (tab.posicaoValida(pos) && podeMover(pos))
             {
@@ -81,10 +81,11 @@ namespace xadrez
                 {
                     break;
                 }
-                pos.definirValores(posicao.Linha - 1, posicao.Coluna - 1);
-
+                pos.Linha--;
+                pos.Coluna--;
             }
-            //NE
+
+            // Movimento NE (Nordeste)
             pos.definirValores(posicao.Linha - 1, posicao.Coluna + 1);
             while (tab.posicaoValida(pos) && podeMover(pos))
             {
@@ -93,10 +94,11 @@ namespace xadrez
                 {
                     break;
                 }
-                pos.definirValores(posicao.Linha - 1, posicao.Coluna + 1);
-
+                pos.Linha--;
+                pos.Coluna++;
             }
-            //SE
+
+            // Movimento SE (Sudeste)
             pos.definirValores(posicao.Linha + 1, posicao.Coluna + 1);
             while (tab.posicaoValida(pos) && podeMover(pos))
             {
@@ -105,10 +107,11 @@ namespace xadrez
                 {
                     break;
                 }
-                pos.definirValores(posicao.Linha + 1, posicao.Coluna + 1);
-
+                pos.Linha++;
+                pos.Coluna++;
             }
-            //So
+
+            // Movimento SO (Sudoeste)
             pos.definirValores(posicao.Linha + 1, posicao.Coluna - 1);
             while (tab.posicaoValida(pos) && podeMover(pos))
             {
@@ -117,8 +120,8 @@ namespace xadrez
                 {
                     break;
                 }
-                pos.definirValores(posicao.Linha + 1, posicao.Coluna - 1);
-
+                pos.Linha++;
+                pos.Coluna--;
             }
 
             return mat;

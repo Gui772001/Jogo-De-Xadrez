@@ -58,7 +58,7 @@ namespace Xadrez_Console
             for (int i = 0; i < tab.Linhas; i++)
             {
                 Console.Write(8 - i + " ");
-                for (int j = 0; j < tab.Coluna; j++)
+                for (int j = 0; j < tab.Colunas; j++)
                 {
 
 
@@ -80,7 +80,7 @@ namespace Xadrez_Console
             for (int i = 0; i < tab.Linhas; i++)
             {
                 Console.Write(8 - i + " ");
-                for (int j = 0; j < tab.Coluna; j++)
+                for (int j = 0; j < tab.Colunas; j++)
                 {
                     if (PossicoesPossiveis[i, j])
                     {
@@ -136,7 +136,7 @@ namespace Xadrez_Console
         {
             string s = Console.ReadLine();
             char coluna = s[0];
-            int linha = int.Parse(s.Substring(1));
+            int linha = int.Parse(s[1] + "");
             return new PosicaoXadrez(coluna, linha);
         }
     }

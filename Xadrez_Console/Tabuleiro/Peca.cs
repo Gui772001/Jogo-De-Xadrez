@@ -32,7 +32,7 @@ namespace Tabuleiro
             bool[,] mat = movimentosPossisveil();
             for( int i = 0; i < tab.Linhas; i++)
             {
-                for (int j = 0; j < tab.Coluna; j++)
+                for (int j = 0; j < tab.Colunas; j++)
                 {
                     if (mat[i, j])
                     {

@@ -21,7 +21,7 @@ namespace xadrez
 
         public override bool[,] movimentosPossisveil()
         {
-            bool[,] mat = new bool[tab.Linhas, tab.Coluna];
+            bool[,] mat = new bool[tab.Linhas, tab.Colunas];
             Posicao pos = new Posicao(0, 0);
 
             // Movimento para cima
