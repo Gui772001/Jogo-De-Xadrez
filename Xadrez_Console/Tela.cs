@@ -69,6 +69,7 @@ namespace Xadrez_Console
                 }
                 Console.WriteLine();
             }
+            Console.WriteLine();
             Console.WriteLine("  A  B  C  D  E  F  G  H");
 
         }
@@ -100,7 +101,8 @@ namespace Xadrez_Console
                 }
                 Console.WriteLine();
             }
-            Console.WriteLine("  a  b  c  d  e  f  g  h");
+            Console.WriteLine();
+            Console.WriteLine("  A  B  C  D  E  F  G  H");
             Console.BackgroundColor = fundoOriginal;
 
         }
