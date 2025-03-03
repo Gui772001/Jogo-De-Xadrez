@@ -210,8 +210,6 @@ namespace xadrez
                 throw new TabuleiroException("Posição negada");
 
             }
-            Console.WriteLine(origem);
-            Console.WriteLine(destino);
         }
 
         private void mudarJogador()

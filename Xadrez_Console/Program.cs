@@ -28,9 +28,7 @@ internal class Program
 
 
                     Console.Write("Destino :");
-                    Console.WriteLine(origim);
                     Posicao destino = Tela.lerPosicaoXadrez().toPosicao();
-                    Console.WriteLine(destino);
                     partida.validarPosicaoDeDestino(origim, destino);
                     partida.realizaJogada(origim, destino);
                 }
