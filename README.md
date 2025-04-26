@@ -1,12 +1,31 @@
-Um jogo de xadrez desenvolvido em C# totalmente baseado no console, implementando as regras oficiais do jogo e um sistema de movimentação válido para todas as peças.
+♟️ Jogo de Xadrez no Console - C#
 
-📌 Funcionalidades
-✅ Tabuleiro interativo no console
+Um jogo de xadrez desenvolvido em C#, totalmente executado no console, com foco na fidelidade às regras oficiais do jogo. Ideal para quem curte lógica, estratégia e programação orientada a objetos!
+
+🕹️ Funcionalidades
+✅ Interface no console com visualização do tabuleiro em tempo real
+
 ✅ Regras oficiais do xadrez implementadas
-✅ Movimento de todas as peças respeitando as regras do jogo
+
+✅ Movimento válido para todas as peças (rei, dama, torre, bispo, cavalo e peão)
+
 ✅ Detecção de xeque e xeque-mate
-✅ Sistema de captura de peças
+
+✅ Sistema de captura e rastreio das peças eliminadas
+
+✅ Controle de turnos e cores das peças
+
+✅ Validação de jogadas ilegais
 
 🛠️ Tecnologias Utilizadas
-C#
-.NET
+💻 C#
+
+🧱 .NET 6.0
+
+🧠 Programação Orientada a Objetos (POO)
+
+🎮 Lógica de jogo baseada em console
+
+📷 Imagens do Projeto
+<p align="center"> <img src="./img/partida-em-andamento.png" alt="Jogo de Xadrez rodando no console" width="700"/> 
+</p> <p align="center"> <img src="./img/xeque-rei.png" alt="Rei em Xeque no Xadrez" width="700"/> </p>
