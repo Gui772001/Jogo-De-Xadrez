@@ -28,4 +28,4 @@ Um jogo de xadrez desenvolvido em C#, totalmente executado no console, com foco 
 
 📷 Imagens do Projeto
 <p align="center"> <img src="./img/partida-em-andamento.png" alt="Jogo de Xadrez rodando no console" width="700"/> 
-</p> <p align="center"> <img src="./img/xeque-rei.png" alt="Rei em Xeque no Xadrez" width="700"/> </p>
+</p> <p align="center"> <img src="./img/xeque-rei.pnG" alt="Rei em Xeque no Xadrez" width="700"/> </p>
